@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="load()">
+    <div class="parent">
+        <div class="child">
+            <label id="name">未连接上服务器</label>
+            <label id="nop" style="float: right;"></label>
+            <textarea id="output" style="height: 70%;" readonly></textarea>
+            <textarea id="input" onkeydown="quickSend()" placeholder="按下回车键发送内容，按下ctrl+回车键进行换行" style="height: 30%;" disabled></textarea>
+            <button id="send" onclick="send()" hidden>发送</button>
+            <button id="roll" onclick="roll()" hidden>掷点</button>
+            <button id="rename" onclick="rename()" hidden>改名</button>
+            <button id="dislink" onclick="dislink()" hidden>断连</button>
+            <button id="relink" onclick="relink()" hidden>重连</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

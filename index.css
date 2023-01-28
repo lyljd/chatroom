@@ -1,0 +1,40 @@
+label {
+    font-size: 20px;
+}
+
+html,
+body,
+.parent {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    margin-top: -55px;
+    width: 600px;
+    height: 450px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+    display: block;
+    box-sizing: border-box;
+}
+
+button {
+    width: 60px;
+    height: 45px;
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+}
